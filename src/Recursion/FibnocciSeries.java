@@ -2,7 +2,7 @@ package Recursion;
 
 public class FibnocciSeries {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 8;
         printFib(n);
 
     }
@@ -11,7 +11,6 @@ public class FibnocciSeries {
         if(n<=1){
             return n;
         }
-        if (n==2) return 1;
         else return fib(n-1)+fib(n-2);
     }
     private static void printFib(int n){
