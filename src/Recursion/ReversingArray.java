@@ -10,6 +10,7 @@ public class ReversingArray {
         reverse(arr,start,end);
         reverseArr(arr);
         System.out.println(Arrays.toString(arr));
+        reversePrint(arr,arr.length-1,0);
     }
 
     private static void reverse(int[] arr,int start, int end){
@@ -34,5 +35,10 @@ public class ReversingArray {
             start++;
             end--;
         }
+    }
+    private static void reversePrint(int[]arr,int size,int start){
+        if(start>size) return;
+        System.out.print(arr[size]+" ");
+        reversePrint(arr,--size,start);
     }
 }
